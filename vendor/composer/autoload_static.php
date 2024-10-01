@@ -459,8 +459,8 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -668,9 +668,15 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         'AnourValar\\EloquentSerialize\\Grammars\\QueryBuilderGrammar' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Grammars/QueryBuilderGrammar.php',
         'AnourValar\\EloquentSerialize\\Package' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Package.php',
         'AnourValar\\EloquentSerialize\\Service' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Service.php',
+        'App\\Filament\\Resources\\AssociateResource' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource.php',
+        'App\\Filament\\Resources\\AssociateResource\\Pages\\CreateAssociate' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource/Pages/CreateAssociate.php',
+        'App\\Filament\\Resources\\AssociateResource\\Pages\\EditAssociate' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource/Pages/EditAssociate.php',
+        'App\\Filament\\Resources\\AssociateResource\\Pages\\ListAssociates' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource/Pages/ListAssociates.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Models\\Associate' => __DIR__ . '/../..' . '/app/Models/Associate.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BladeUI\\Heroicons\\BladeHeroiconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src/BladeHeroiconsServiceProvider.php',
         'BladeUI\\Icons\\BladeIconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
@@ -805,7 +811,11 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         'DanHarrin\\LivewireRateLimiting\\Exceptions\\TooManyRequestsException' => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src/Exceptions/TooManyRequestsException.php',
         'DanHarrin\\LivewireRateLimiting\\WithRateLimiting' => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src/WithRateLimiting.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\AssociateSeeder' => __DIR__ . '/../..' . '/database/seeders/AssociateSeeder.php',
+        'Database\\Seeders\\CivilStatusSeeder' => __DIR__ . '/../..' . '/database/seeders/CivilStatusSeeder.php',
+        'Database\\Seeders\\CountriesSeeder' => __DIR__ . '/../..' . '/database/seeders/CountriesSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
