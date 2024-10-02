@@ -27,7 +27,12 @@ class AssociateResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
+                    ->maxLength(150),
+                Forms\Components\TextInput::make('last_name')
+                    ->required()
                     ->maxLength(255),
+                Forms\Components\Toggle::make('status')
+                    ->required(),
             ]);
     }
 
@@ -35,11 +40,22 @@ class AssociateResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name'),
-                TextColumn::make('last_name'),
-                TextColumn::make('email'),
+                TextColumn::make('name')
+                    ->searchable(),
+                TextColumn::make('last_name')
+                    ->searchable(),
+                TextColumn::make('email')
+                    ->searchable(),
                 IconColumn::make('status')
                     ->boolean(),
+                TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('updated_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //
