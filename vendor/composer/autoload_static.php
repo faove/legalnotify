@@ -176,6 +176,7 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         'F' => 
         array (
             'Fruitcake\\Cors\\' => 15,
+            'FilipFonal\\FilamentLogManager\\' => 30,
             'Filament\\Widgets\\' => 17,
             'Filament\\Tables\\' => 16,
             'Filament\\Support\\' => 17,
@@ -558,6 +559,10 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
+        'FilipFonal\\FilamentLogManager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src',
+        ),
         'Filament\\Widgets\\' => 
         array (
             0 => __DIR__ . '/..' . '/filament/widgets/src',
@@ -698,13 +703,21 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         'App\\Filament\\Resources\\AssociateResource\\Pages\\CreateAssociate' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource/Pages/CreateAssociate.php',
         'App\\Filament\\Resources\\AssociateResource\\Pages\\EditAssociate' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource/Pages/EditAssociate.php',
         'App\\Filament\\Resources\\AssociateResource\\Pages\\ListAssociates' => __DIR__ . '/../..' . '/app/Filament/Resources/AssociateResource/Pages/ListAssociates.php',
+        'App\\Filament\\Resources\\ClientResource' => __DIR__ . '/../..' . '/app/Filament/Resources/ClientResource.php',
+        'App\\Filament\\Resources\\ClientResource\\Pages\\CreateClient' => __DIR__ . '/../..' . '/app/Filament/Resources/ClientResource/Pages/CreateClient.php',
+        'App\\Filament\\Resources\\ClientResource\\Pages\\EditClient' => __DIR__ . '/../..' . '/app/Filament/Resources/ClientResource/Pages/EditClient.php',
+        'App\\Filament\\Resources\\ClientResource\\Pages\\ListClients' => __DIR__ . '/../..' . '/app/Filament/Resources/ClientResource/Pages/ListClients.php',
         'App\\Filament\\Resources\\UserResource' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource.php',
         'App\\Filament\\Resources\\UserResource\\Pages\\CreateUser' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource/Pages/CreateUser.php',
         'App\\Filament\\Resources\\UserResource\\Pages\\EditUser' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource/Pages/EditUser.php',
         'App\\Filament\\Resources\\UserResource\\Pages\\ListUsers' => __DIR__ . '/../..' . '/app/Filament/Resources/UserResource/Pages/ListUsers.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Models\\Associate' => __DIR__ . '/../..' . '/app/Models/Associate.php',
+        'App\\Models\\Client' => __DIR__ . '/../..' . '/app/Models/Client.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Policies\\AssociatePolicy' => __DIR__ . '/../..' . '/app/Policies/AssociatePolicy.php',
+        'App\\Policies\\RolePolicy' => __DIR__ . '/../..' . '/app/Policies/RolePolicy.php',
+        'App\\Policies\\UserPolicy' => __DIR__ . '/../..' . '/app/Policies/UserPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -870,6 +883,8 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\AssociateSeeder' => __DIR__ . '/../..' . '/database/seeders/AssociateSeeder.php',
         'Database\\Seeders\\CivilStatusSeeder' => __DIR__ . '/../..' . '/database/seeders/CivilStatusSeeder.php',
+        'Database\\Seeders\\ClientSeeder' => __DIR__ . '/../..' . '/database/seeders/ClientSeeder.php',
+        'Database\\Seeders\\ClientStatusSeeder' => __DIR__ . '/../..' . '/database/seeders/ClientStatusSeeder.php',
         'Database\\Seeders\\CountriesSeeder' => __DIR__ . '/../..' . '/database/seeders/CountriesSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
@@ -2811,6 +2826,12 @@ class ComposerStaticInit38c11577fe0b3951a74a4ae46b78318d
         'Filament\\Widgets\\Widget' => __DIR__ . '/..' . '/filament/widgets/src/Widget.php',
         'Filament\\Widgets\\WidgetConfiguration' => __DIR__ . '/..' . '/filament/widgets/src/WidgetConfiguration.php',
         'Filament\\Widgets\\WidgetsServiceProvider' => __DIR__ . '/..' . '/filament/widgets/src/WidgetsServiceProvider.php',
+        'FilipFonal\\FilamentLogManager\\Commands\\FilamentLogManagerCommand' => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src/Commands/FilamentLogManagerCommand.php',
+        'FilipFonal\\FilamentLogManager\\Facades\\FilamentLogManager' => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src/Facades/FilamentLogManager.php',
+        'FilipFonal\\FilamentLogManager\\FilamentLogManager' => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src/FilamentLogManager.php',
+        'FilipFonal\\FilamentLogManager\\FilamentLogManagerServiceProvider' => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src/FilamentLogManagerServiceProvider.php',
+        'FilipFonal\\FilamentLogManager\\LogViewer' => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src/LogViewer.php',
+        'FilipFonal\\FilamentLogManager\\Pages\\Logs' => __DIR__ . '/..' . '/filipfonal/filament-log-manager/src/Pages/Logs.php',
         'Fruitcake\\Cors\\CorsService' => __DIR__ . '/..' . '/fruitcake/php-cors/src/CorsService.php',
         'Fruitcake\\Cors\\Exceptions\\InvalidOptionException' => __DIR__ . '/..' . '/fruitcake/php-cors/src/Exceptions/InvalidOptionException.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
