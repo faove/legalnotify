@@ -21,6 +21,16 @@ class AssociateResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    public static function getNavigationGroup(): string
+    {
+        return 'Associate';
+    }
+
+    public static function getNavigationSort(): ?int
+    {
+        return 1;
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -31,6 +41,10 @@ class AssociateResource extends Resource
                 Forms\Components\TextInput::make('last_name')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('email')
+                    ->email()
+                    ->required()
+                    ->label(trans('filament-users::user.resource.email')),
                 Forms\Components\Toggle::make('status')
                     ->required(),
             ]);
@@ -84,5 +98,9 @@ class AssociateResource extends Resource
             'create' => Pages\CreateAssociate::route('/create'),
             'edit' => Pages\EditAssociate::route('/{record}/edit'),
         ];
+    }
+    public static function shouldRegisterNavigation(): bool
+    {
+        return true;
     }
 }
